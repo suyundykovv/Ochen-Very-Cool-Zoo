@@ -3,25 +3,37 @@ package models;
 import java.util.ArrayList;
 
 public class Animal {
-    private static int id;
+    private static int id = 0;
     private String name;
     private int age;
     private String type;
     private String location;
-    private ArrayList actions;
+    private ArrayList<Action> actions;
 
     public Animal() {
 
     }
-    public Animal (int id, String name, int age, String type, String location, ArrayList actions) {
-        this.id = id;
+    public Animal (int id,
+                   String name,
+                   int age,
+                   String type,
+                   String location,
+                   ArrayList<Action> actions
+    ) {
+        Animal.id = id;
         this.name = name;
         this.age = age;
         this.type = type;
         this.location = location;
         this.actions = actions;
     }
-    public Animal (String name, int age, String type, String location, ArrayList actions) {
+    public Animal (
+            String name,
+            int age,
+            String type,
+            String location,
+            ArrayList<Action> actions
+    ) {
         id++;
         this.name = name;
         this.age = age;
@@ -50,7 +62,7 @@ public class Animal {
         this.location = location;
     }
 
-    public void setActions(ArrayList actions) {
+    public void setActions(ArrayList<Action> actions) {
         this.actions = actions;
     }
 
@@ -75,7 +87,7 @@ public class Animal {
         return location;
     }
 
-    public ArrayList getActions() {
+    public ArrayList<Action> getActions() {
         return actions;
     }
 }
