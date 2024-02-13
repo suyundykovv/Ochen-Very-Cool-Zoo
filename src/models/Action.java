@@ -6,9 +6,17 @@ public class Action {
     private String response;
 
     public Action(String request, String response) {
+        id++;
         this.request = request;
         this.response = response;
     }
+
+    public Action(int id, String request, String response) {
+        Action.id = id;
+        this.request = request;
+        this.response = response;
+    }
+
 
     public void setRequest(String request) {
         this.request = request;
@@ -28,5 +36,10 @@ public class Action {
 
     public String getResponse() {
         return response;
+    }
+
+    @Override
+    public String toString() {
+        return request;
     }
 }

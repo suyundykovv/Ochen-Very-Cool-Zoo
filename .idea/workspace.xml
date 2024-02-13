@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53b8d6a-6893-4060-8614-6f2291a513da" name="Changes" comment="Added postresql library">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/AnimalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Animal.java" afterDir="false" />
+    <list default="true" id="a53b8d6a-6893-4060-8614-6f2291a513da" name="Changes" comment="Created new Classes in &quot;models&quot; folder">
+      <change afterPath="$PROJECT_DIR$/src/data/PostrgresDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/interfaces/IDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/ActionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/AnimalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/ItemRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -37,25 +44,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/artem/Documents/Java (Kirill)/Ochen Very Cool Zoo/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/artem/Documents/Java (Kirill)/Ochen Very Cool Zoo/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,6 +86,15 @@
       <workItem from="1707581684489" duration="49000" />
       <workItem from="1707581746519" duration="192000" />
       <workItem from="1707581965910" duration="158000" />
+      <workItem from="1707582151442" duration="1375000" />
+      <workItem from="1707828047528" duration="96000" />
+      <workItem from="1707829146659" duration="381000" />
+      <workItem from="1707829580932" duration="63000" />
+      <workItem from="1707829652904" duration="15000" />
+      <workItem from="1707829675851" duration="26000" />
+      <workItem from="1707829718077" duration="10000" />
+      <workItem from="1707829736777" duration="13000" />
+      <workItem from="1707829756776" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="Created the project">
       <option name="closed" value="true" />
@@ -103,7 +120,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707577129501</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed structure of the project">
+      <option name="closed" value="true" />
+      <created>1707582344997</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707582344997</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created new Classes in &quot;models&quot; folder">
+      <option name="closed" value="true" />
+      <created>1707583277275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707583277275</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +145,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created the project" />
     <MESSAGE value="Added postresql library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added postresql library" />
+    <MESSAGE value="Changed structure of the project" />
+    <MESSAGE value="Created new Classes in &quot;models&quot; folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new Classes in &quot;models&quot; folder" />
   </component>
 </project>

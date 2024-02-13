@@ -90,4 +90,15 @@ public class Animal {
     public ArrayList<Action> getActions() {
         return actions;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", type='" + type + '\'' +
+                ", location='" + location + '\'' +
+                ", actions=" + actions.toString() +
+                '}';
+    }
 }

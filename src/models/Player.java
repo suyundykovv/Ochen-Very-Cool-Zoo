@@ -14,11 +14,19 @@ public class Player {
     public void addCoins() {
         coins += 100;
     }
+    public void removeCoins(int c) {
+        coins -= c;
+    }
+
     public void addAnimalCoins() {
         animal_coins += 5;
+    }
+    public void removeAnimalCoins() {
+        animal_coins -= 50;
     }
 
     public void addItem(Item item) {
         bag.add(item);
     }
+
 }
