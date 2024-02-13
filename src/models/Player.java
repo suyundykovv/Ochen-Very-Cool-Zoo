@@ -3,12 +3,20 @@ package models;
 import java.util.ArrayList;
 
 public class Player {
-    private static int coins = 0;
-    private static int animal_coins = 0;
+    private int coins = 0;
+    private int animal_coins = 0;
     private ArrayList<Item> bag;
 
     public Player () {
 
+    }
+
+    public int getCoins() {
+        return coins;
+    }
+
+    public int getAnimal_coins() {
+        return animal_coins;
     }
 
     public void addCoins() {
@@ -27,6 +35,6 @@ public class Player {
 
     public void addItem(Item item) {
         bag.add(item);
+        coins -= item.getPrice();
     }
-
 }

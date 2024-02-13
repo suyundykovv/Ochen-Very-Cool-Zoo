@@ -31,11 +31,7 @@ public class Item {
         return price;
     }
 
-    @Override
-    public String toString() {
-        return "Item{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+    public String getInfo() {
+        return name + " - " + price;
     }
 }

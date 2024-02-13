@@ -19,9 +19,6 @@ public class Main {
         animal.setLocation("tropics");
         animal.setActions(actions);
 
-
-
-
         System.out.println(animal.toString());
     }
 }
