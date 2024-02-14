@@ -8,10 +8,8 @@ public class PostgresDB implements IDB {
     public Connection getConnection() {
         String connectionUrl = "jdbc:postgresql://localhost:5432/webapp";
         try {
-            // Here we load the driver’s class file into memory at the runtime
             Class.forName("org.postgresql.Driver");
 
-            // Establish the connection
             Connection con = DriverManager.getConnection(connectionUrl, "postgres", "margulan21266");
 
             return con;
