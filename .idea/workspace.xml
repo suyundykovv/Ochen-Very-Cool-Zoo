@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a53b8d6a-6893-4060-8614-6f2291a513da" name="Changes" comment="Added some new data in model classes, tested animal class, created new empty files for the future">
-      <change afterPath="$PROJECT_DIR$/src/data/PostgresDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a53b8d6a-6893-4060-8614-6f2291a513da" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/PostrgresDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/interfaces/IDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/interfaces/IDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/PostgresDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/PostgresDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,26 +35,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/artem/Documents/Java (Kirill)/Ochen Very Cool Zoo/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Майра/Downloads/postgresql-42.7.1.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/artem/Documents/Java (Kirill)/Ochen Very Cool Zoo/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -91,7 +89,7 @@
       <workItem from="1707829756776" duration="1949000" />
       <workItem from="1707831763370" duration="384000" />
       <workItem from="1707832470199" duration="1514000" />
-      <workItem from="1707888180155" duration="675000" />
+      <workItem from="1707888180155" duration="5847000" />
     </task>
     <task id="LOCAL-00001" summary="Created the project">
       <option name="closed" value="true" />
@@ -141,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707831964885</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add PostgresDB with localhost and password">
+      <option name="closed" value="true" />
+      <created>1707888914958</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707888914958</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +159,7 @@
     <MESSAGE value="Changed structure of the project" />
     <MESSAGE value="Created new Classes in &quot;models&quot; folder" />
     <MESSAGE value="Added some new data in model classes, tested animal class, created new empty files for the future" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some new data in model classes, tested animal class, created new empty files for the future" />
+    <MESSAGE value="add PostgresDB with localhost and password" />
+    <option name="LAST_COMMIT_MESSAGE" value="add PostgresDB with localhost and password" />
   </component>
 </project>
